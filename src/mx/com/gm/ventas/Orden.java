@@ -22,14 +22,14 @@ public class Orden {
         this.producto = new Producto[Orden.MAX_PRODUCTOS];
     }
 
-//    public void agregarProduco(Producto producto) {
-//
-//        if (this.contadorProductos < Orden.MAX_PRODUCTOS) {
-//            this.producto[this.contadorProductos++] = producto;
-//        } else {
-//            System.out.println("Se superó el limite de productos");
-//        }
-//    }
+    public void agregarProduco(Producto producto) {
+
+        if (this.contadorProductos < Orden.MAX_PRODUCTOS) {
+            this.producto[this.contadorProductos++] = producto;
+        } else {
+            System.out.println("Se superó el limite de productos");
+        }
+    }
 
     public double calcularTotal() {
         double total = 0;
